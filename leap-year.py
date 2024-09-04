@@ -12,7 +12,7 @@ def count_leap_years(y1, y2):
 
 
 def birthdays_count(d1, m1, y1, d2, m2, y2):
-    if d1 == 29 and m1 == 2:  # костыль, обрабатывающий случай др у Васи 29 февраля как у Пети
+    if d1 == 29 and m1 == 2:  # костыль, обрабатывающий случай др у Васи 29 февраля 
         vs_birthdays = count_leap_years(y1, y2)
         if not (leap_year(y2) and (m2 > 2 or (m2 == 2 and d2 >= 29))):
             vs_birthdays -= 1
