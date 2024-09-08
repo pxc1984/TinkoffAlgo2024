@@ -1,3 +1,8 @@
 from itertools import product
 
-print(list(product(["К", "О", "П"], repeat=5))[237])
+cnt = 0
+for i in product(["А", "О", "У"], repeat=5):
+    cnt += 1
+    if i[0] == "О":
+        print(cnt, i)
+        break
