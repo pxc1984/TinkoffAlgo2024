@@ -1,8 +1,8 @@
 from itertools import product
 
 cnt = 0
-for i in product(["А", "О", "У"], repeat=5):
+for i in product(["К", "Л", "Р", "Т"], repeat=4):
     cnt += 1
-    if i[0] == "О":
+    if cnt == 67:
         print(cnt, i)
         break
